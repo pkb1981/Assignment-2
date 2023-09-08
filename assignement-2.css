@@ -46,3 +46,15 @@ nav ul li {
     color: #3C354F;
     font-weight: 500;
 }
+
+/* responsive design for mobile device */
+@media screen and (max-width:576px) {
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+/*  */
