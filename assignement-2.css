@@ -165,6 +165,10 @@ main {
 }
 
 /* main section online games  styling*/
+.online-games-section {
+    padding: 5% 0;
+}
+
 .online-head {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -193,13 +197,55 @@ main {
     gap: 10px;
 }
 
+/* main section 4 play instantly styling */
+.play-instantly {
+    display: flex;
+    gap: 5%;
+}
+
+.play-instantly-text {
+    padding: 10% 10%;
+    align-items: flex-start;
+}
+
+.swap-image img {
+    width: 20%;
+    position: relative;
+    left: 500px;
+    bottom: 150px;
+
+}
+
+/* main section added styling */
+.logo {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.nine-logos {
+    width: 880px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+
+}
+
+.logo:hover {
+    color: #4EC5F7;
+    border: 2px solid red;
+}
 
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
 
     nav,
     nav ul,
-    .gamer {
+    .gamer,
+    .play-instantly {
         flex-direction: column;
         row-gap: 20px;
     }
@@ -239,6 +285,28 @@ main {
     .online-games-figure {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .play-instantly-text {
+        text-align: center;
+    }
+
+    .swap-image img {
+        width: 20%;
+        position: relative;
+        left: 50px;
+        bottom: 120px;
+
+    }
+
+    .nine-logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo:hover {
+        color: #4EC5F7;
+        border: 2px solid red;
     }
 }
 
