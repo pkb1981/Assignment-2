@@ -19,7 +19,7 @@ nav {
 
 }
 
-.gamer {
+.nav-head {
     color: #FF42A5;
 }
 
@@ -51,20 +51,17 @@ nav ul li {
 /* main section-1 styling */
 main {
     width: 880px;
-    padding: 25px 180px;
+    padding: 0 180px;
 }
 
 .goat {
     display: flex;
     align-items: center;
     gap: 50px;
+    height: fit-content;
     background-image: url('./images/Group\ 14.png');
     background-position: left;
     background-repeat: no-repeat;
-}
-
-.left-goat {
-    padding-top: 20px;
 }
 
 .left-goat p img {
@@ -99,7 +96,7 @@ main {
 .go-rogue {
     padding: 21px 40px;
     background-color: #4EC5F7;
-    width: 165px;
+    width: 185px;
     height: 55px;
     border-radius: 48px;
     color: #FFF;
@@ -111,7 +108,7 @@ main {
 .sign-in {
     padding: 21px 40px;
     background-color: #FF42A5;
-    width: 150px;
+    width: 185px;
     height: 55px;
     border-radius: 48px;
     color: #FFF;
@@ -120,22 +117,93 @@ main {
     border: none;
 }
 
+/* main section gamer styling */
+.gamer {
+    display: flex;
+    gap: 30%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: fit-content;
+}
+
+.gamer-image img {
+    width: 200%;
+}
+
+.gamer-head {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    text-align: right;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gamer-paragraph {
+    color: #534C64;
+    text-align: right;
+    font-size: 1rem;
+    line-height: 30px;
+    padding: 10% 0;
+}
+
+.gamer-button {
+    position: relative;
+    left: 55%;
+}
+
+.unleash {
+    text-align: right;
+}
+
+.three-dot {
+    padding-top: 5%;
+    text-align: right;
+}
+
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
 
     nav,
-    nav ul {
+    nav ul,
+    .gamer {
         flex-direction: column;
         row-gap: 20px;
     }
 
     nav {
+
         height: 200px;
+    }
+
+    .left-goat {
+        padding-top: 5%;
     }
 
     .goat {
         flex-direction: column-reverse;
         background-position: 50% 100%;
+    }
+
+    .gamer-image img {
+        width: 100%;
+    }
+
+    .gamer-head,
+    .gamer-paragraph,
+    .three-dot,
+    .unleash {
+        text-align: center;
+        padding: 20px 120px;
+    }
+
+    .gamer-button {
+        justify-content: center;
+        position: relative;
+        left: 40%;
     }
 }
 
