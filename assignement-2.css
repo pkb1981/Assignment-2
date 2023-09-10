@@ -164,6 +164,36 @@ main {
     text-align: right;
 }
 
+/* main section online games  styling*/
+.online-head {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.online h1 {
+    font-size: 2.5rem;
+}
+
+.online-games-figure img {
+    width: 95%;
+    gap: 2px;
+    border-radius: 5px;
+}
+
+.online-games-figure {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
 /* responsive design for mobile device */
 @media screen and (max-width:576px) {
 
@@ -204,6 +234,11 @@ main {
         justify-content: center;
         position: relative;
         left: 40%;
+    }
+
+    .online-games-figure {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
